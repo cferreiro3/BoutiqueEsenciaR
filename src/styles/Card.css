@@ -1,0 +1,138 @@
+.contenedor-cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1150px;
+    margin: 30px auto 0;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    min-height: 390px;
+
+    padding: 18px;
+
+    border: 1px solid #8f6641;
+    border-radius: 12px;
+
+    background-color: #8f6641;
+    color: #fffaf3;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 5px 15px rgba(62, 44, 28, 0.15);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 22px rgba(62, 44, 28, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.card p {
+    color: #fffaf3;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.card-footer span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .boton-consultar {
+    padding: 10px 15px;
+
+    background-color: #3E2C1C;
+    color: #fffaf3;
+
+    border: 1px solid #3E2C1C;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 17px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.card .boton-consultar:hover {
+    background-color: transparent;
+    color: #fffaf3;
+
+    border-color: #fffaf3;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .contenedor-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .contenedor-cards {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        padding: 10px;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}

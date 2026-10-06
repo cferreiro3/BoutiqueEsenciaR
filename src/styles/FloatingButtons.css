@@ -1,0 +1,32 @@
+.botones-flotantes {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.boton-flotante {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #3E2C1C;
+  color: #fffaf3;
+  font-size: 17px;
+  cursor: pointer;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.boton-flotante:hover {
+  background-color: #8f6641;
+  transform: translateY(-3px);
+}

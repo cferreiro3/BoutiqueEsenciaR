@@ -1,0 +1,17 @@
+.pagina-productos {
+    padding: 50px 20px;
+}
+
+.pagina-productos h1 {
+    text-align: center;
+    color: #3E2C1C;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.pagina-productos > p {
+    text-align: center;
+    color: #6b4b35;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
