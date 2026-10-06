@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import Layout from './components/Layout'
 import Home from './pages/Home'
@@ -8,7 +8,7 @@ import Contacto from './pages/Contacto'
 
 function App() {
   return (
-    <BrowserRouter basename="/BoutiqueEsenciaR">
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
