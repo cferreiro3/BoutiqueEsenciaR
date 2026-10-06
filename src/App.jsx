@@ -8,7 +8,7 @@ import Contacto from './pages/Contacto'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/BoutiqueEsenciaR">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
